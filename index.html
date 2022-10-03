@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/w3.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="Font awesome/fontawesome/css/all.css">
+    <link rel="stylesheet" href="Excon_Complete/Fonts/WEB/css/excon.css">
+    <link rel="icon" href="" type="image/x-icon">
+    <title>NFT Landing Page</title>
+</head>
+
+<body onload="mypasswordcheck()" id="body">
+    <!--This is the home section-->
+    <section class="section1" id="home">
+        <!--nav bar large screen devices-->
+        <div
+            class="w3-bar w3-section-content w3-text-white w3-excon-bold w3-padding w3-large w3-hide-small w3-animate-opacity w3-hide-medium">
+            <img src="images/logo.png" alt="Logo" style="width: 50px; height: 50px;" class="w3-left">
+            <a href="#about" class="w3-bar-item w3-right w3-button w3-margin2"> <i class="fas fa-user"></i> About Us</a>
+            <a href="#marketplace" class="w3-bar-item w3-right w3-button"> <i class="fas fa-dollar-sign"></i>
+                Marketplace</a>
+            <a href="#home" class="w3-bar-item w3-right w3-button"> <i class="fas fa-home"></i> Home</a>
+        </div>
+        <!--The hidden nav bar content for small and medium screens-->
+        <div class="w3-bar section2 w3-hide-large w3-excon-medium w3-text-white w3-animate-opacity" style="width: 100%; display: none;"
+            id="nav">
+            <i class="fa-solid fa-close w3-button w3-right w3-large" style="margin-right: 15px;"
+                onclick="document.getElementById('nav').style.display='none'; document.getElementById('smallnav').style.display='block'"></i>
+            <a href="#home" class="w3-bar-item w3-button" style="width:100%">Home</a>
+            <a href="#marketplace" class="w3-bar-item w3-button" style="width:100%">Marketplace</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:100%">About Us</a>
+        </div>
+        <!--The nav bar for small and medium screens-->
+        <div class="w3-bar w3-hide-large w3-padding-16" style="display: block;" id="smallnav">
+            <img src="images/logo.png" alt="Logo" style="width: 50px; height: 50px; margin-left:5vw;" class="w3-left">
+            <i class="fa-solid fa-bars w3-button w3-right w3-large w3-text-white" style="margin-right: 5vw;"
+                onclick="document.getElementById('nav').style.display='block'; document.getElementById('smallnav').style.display='none'"></i>
+        </div>
+        <br><br><br><br>
+
+        <div class="w3-section-content w3-padding w3-text-white w3-animate-left" style="line-height:1.5;">
+            <h1 class="w3-excon-black w3-xxxlarge">THE BEST</h1>
+            <h3 class="w3-excon-bold">NFT Marketplace you have ever been to...</h3>
+            <p class="w3-excon-medium w3-large"> <i class="fa-solid fa-users"></i> Our 1000+ Customers are saying thank
+                you right now! <br>It is time to start your NFT Trade too and become happy.</p> <br>
+            <a href="#marketplace"
+                class="w3-button w3-excon-medium w3-plum-gradient w3-round-large w3-large w3-margin-right w3-padding-16"
+                style="margin-bottom: 5px;">Visit
+                Marketplace <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"
+                class="w3-button w3-excon-medium w3-large w3-plum-gradient w3-text-white w3-round-large w3-padding-16"><i
+                    class="fa-solid fa-play-circle"></i> Play Demo Video</a>
+        </div>
+        <br><br><br><br><br><br><br> <br>
+    </section>
+    <!--This section is for the NFT Marketplace-->
+    <section class="section2" id="marketplace"
+        onmouseenter="alert('Mouseover the artworks to see some details about them. Click OK to continue!')">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill" fill="#802171" fill-opacity="1"></path>
+        </svg>
+        <h2 class="w3-excon-bold w3-section-content w3-center w3-text-white" style="line-height:0.8;">Marketplace <br>
+            <span class="w3-jumbo w3-center">&#x268A;</span>
+        </h2>
+        <div class="w3-content-margin4">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-round-xlarge">
+                        <img src="images/7748169.jpg" alt="nft1" style="width: 100%;" class="w3-round-xlarge"
+                            id="animate" onmouseover="document.getElementById('show_para').style.display='block';"
+                            onmouseout="document.getElementById('show_para').style.display='none'"
+                            onmousemove="document.getElementById('animate').className='w3-animate-right';">
+                        <p class="w3-excon-medium w3-margin w3-padding w3-large w3-center w3-text-white"
+                            style="display: none;" id="show_para">This artwork cost $20,000 buy it for $100 and resell
+                            later.</p>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-round-xlarge">
+                        <img src="images/7748178.jpg" alt="nft1" style="width: 100%;" class="w3-round-xlarge"
+                            id="animate1" onmouseover="document.getElementById('show_para1').style.display='block';"
+                            onmouseout="document.getElementById('show_para1').style.display='none'"
+                            onmousemove="document.getElementById('animate1').className='w3-animate-right';">
+                        <p class="w3-excon-medium w3-margin w3-padding w3-large w3-center w3-text-white"
+                            style="display: none;" id="show_para1">This artwork cost $20,000 buy it for $100 and resell
+                            later.</p>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-round-xlarge">
+                        <img src="images/7748187.jpg" alt="nft1" style="width: 100%;" class="w3-round-xlarge"
+                            id="animate2" onmouseover="document.getElementById('show_para2').style.display='block';"
+                            onmouseout="document.getElementById('show_para2').style.display='none'"
+                            onmousemove="document.getElementById('animate2').className='w3-animate-right';">
+                        <p class="w3-excon-medium w3-margin w3-padding w3-large w3-center w3-text-white"
+                            style="display: none;" id="show_para2">This artwork cost $20,000 buy it for $100 and resell
+                            later.</p>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-round-xlarge">
+                        <img src="images/7748166.jpg" alt="nft1" style="width: 100%;" class="w3-round-xlarge"
+                            id="animate3" onmouseover="document.getElementById('show_para3').style.display='block';"
+                            onmouseout="document.getElementById('show_para3').style.display='none'"
+                            onmousemove="document.getElementById('animate3').className='w3-animate-right';">
+                        <p class="w3-excon-medium w3-margin w3-padding w3-large w3-center w3-text-white"
+                            style="display: none;" id="show_para3">This artwork cost $20,000 buy it for $100 and resell
+                            later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--This secion is for the about information-->
+    <section class="section2" id="about">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill" fill="#FBB105" fill-opacity="1"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill" fill="#FBB105" fill-opacity="1"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill" fill="#FBB105" fill-opacity="1"></path>
+        </svg>
+        <h2 class="w3-excon-bold w3-section-content w3-center w3-text-white" style="line-height:0.8;">About Us<br>
+            <span class="w3-jumbo w3-center">&#x268A;</span>
+        </h2>
+        <!--The section content made in rows-->
+        <div class="w3-row w3-content-margin3" style="padding-bottom: 30px;">
+            <!--The diplay image-->
+            <div class="w3-half w3-padding">
+                <img src="images/7748166.jpg" alt="lady" style="width: 100%;" class="w3-round-xlarge">
+            </div>
+            <!--The about us information/content-->
+            <div class="w3-half w3-text-white w3-padding">
+                <h3 class="w3-excon-bold">Who We are</h3>
+                <p class="w3-excon-medium" style="line-height: 1.5; text-align: justify;">We are exceptional people with
+                    exceptional artworks <br>
+                    Our name is NFTs. All we want is your benefit. Your skin color does not matter, neither does
+                    your race, tribe or gender.
+                    What matters to us is your gain... How you benefit, your facial outlook, your wallet and your
+                    bank account at large.
+                    When you buy from us, you don't have a problem, because if our product does not work well for you,
+                    we would give you back your money! 100% guarantee!
+                    Get back on there and click order on of the products.
+                </p>
+                <p class="w3-excon-medium" style="line-height: 1.5; text-align: justify;">We are exceptional people with
+                    exceptional artworks <br>
+                    Our name is NFTs. All we want is your benefit. Your skin color does not matter, neither does
+                    your race, tribe or gender.
+                    What matters to us is your gain... How you benefit, your facial outlook, your wallet and your
+                    bank account at large.
+                    When you buy from us, you don't have a problem, because if our product does not work well for you,
+                    we would give you back your money! 100% guarantee!
+                    Get back on there and click order on of the products.
+                </p>
+                <!--The call to action button-->
+                <a href="#marketplace" class="w3-button w3-plum-gradient w3-round-large w3-large w3-excon-bold">Trade
+                    NFT</a>
+            </div>
+
+        </div>
+
+    </section>
+    <!--This is the footer-->
+    <footer class="section2">
+        <div class="w3-row">
+            <div class="w3-content-margin">
+                <!--The newsletter signup form-->
+                <div class="w3-third w3-padding">
+                    <form action="#">
+                        <h3 class="w3-excon-medium w3-large w3-text-white w3-center">Join Our Newsletter</h4>
+                            <div class="w3-white w3-border w3-round-xxlarge w3-excon-light">
+                                <input type="text" class="w3-input w3-border w3-round-xxlarge w3-animate-input"
+                                    placeholder="Email Address..." style="width: 70%;">
+                                <button class="w3-button w3-plum-gradient w3-text-white w3-border w3-round-xxlarge"
+                                    style="width: 28%;"><b>Join!</b></button>
+                            </div>
+                    </form>
+                </div>
+                <!--The page links-->
+                <div class="w3-third w3-padding w3-text-white">
+                    <div class="w3-excon-medium w3-center">
+                        <a href="#home" class="w3-button">Home</a> <br>
+                        <a href="#product" class="w3-button">Products</a> <br>
+                        <a href="#about" class="w3-button">About Us</a> <br>
+                        <a href="#" class="w3-button">Our Website</a>
+                    </div>
+                </div>
+                <!--The contact details-->
+                <div class="w3-third w3-padding w3-center w3-text-white">
+                    <p>
+                        <span class="w3-excon-medium"><i class="faw fas fa-location-dot"></i> 1234 Refenesses Street,
+                            Avalanche, New York, USA.</span> <br>
+                        <span class="w3-excon-medium"><i class="faw fa-solid fa-envelope"></i>
+                            Examplemail@mail.com</span> <br>
+                        <span class="w3-excon-medium"><i class="faw fas fa-phone"></i> +4448120912266; +4448120912266
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--The attribution details-->
+        <div class="w3-row w3-content-margin">
+            <p class="w3-excon-medium w3-medium w3-center w3-padding"> <i class="fa-solid fa-copyright"></i> Tomiwa
+                Philip.2022</p>
+        </div>
+    </footer>
+    <script>
+        function mypasswordcheck() {
+            var password = prompt("Welcome! Please enter your password");
+            if (password === "Tomiwa1234") {
+                alert("You are welcome Tomiwa!");
+            } else if (password === "TomPhilly") {
+                alert("You are Welcome Philip!");
+            } else if (password === "Blessing") {
+                alert("You are welcome Blessing!");
+            } else if (password === "") {
+                alert("Input Password. Please reload this page");
+                document.getElementById('body').style.display = "none";
+            } else {
+                alert("Incorrect Password! Try again.");
+                document.getElementById('body').style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
